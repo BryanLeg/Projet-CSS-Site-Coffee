@@ -1,0 +1,511 @@
+:root {
+  --primaryColor: #462521;
+  --secondaryColor: #8a6552;
+  --thirdColor: #ffe0b5;
+  --fourthColor: #ca2e55;
+  --fifthColor: #cf788e;
+  --sixthColor: #fae4c8;
+  --seventhColor: #264c69;
+  --heighthColor: #467395;
+  --font-1: "Dancing Script", cursive;
+  --font-2: "Roboto Condensed", sans-serif;
+  --spacing: 0.15rem;
+  --marginBottom: 1.25rem;
+  --marginLeft: 3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Banner */
+.header {
+  height: 100vh;
+  background: url(./Images/Cafébann.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.banner {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner h2 {
+  font-size: 3rem;
+  font-family: var(--font-1);
+  color: var(--fourthColor);
+  animation-name: slideLeft;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translate(60%);
+  }
+  50% {
+    transform: translate(-30%);
+  }
+  75% {
+    transform: translate(10%);
+  }
+}
+
+.box h2 {
+  font-size: 2.75rem;
+  padding-bottom: 20px;
+}
+
+.banner h1 {
+  color: var(--primaryColor);
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding-bottom: 50px;
+  animation-name: slideRight;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translate(-60%);
+  }
+  50% {
+    transform: translate(30%);
+  }
+  75% {
+    transform: translate(-10%);
+  }
+}
+
+.banner a {
+  text-transform: uppercase;
+  color: var(--thirdColor);
+  letter-spacing: var(--spacing);
+  font-family: var(--font-2);
+  text-decoration: none;
+  background-color: var(--fourthColor);
+  padding: 13px 15px 13px 15px;
+  outline: 3px solid var(--fourthColor);
+  outline-offset: 3px;
+}
+
+.btn-banner:hover {
+  color: var(--fourthColor);
+  background-color: var(--fifthColor);
+  transition: all 0.1s linear;
+  outline-offset: 4px;
+  outline-color: var(--fourthColor);
+}
+
+/* end Banner */
+
+.grad {
+  height: 8px;
+  background: linear-gradient(var(--primaryColor), var(--sixthColor));
+  height: 1rem;
+}
+
+/* Boxes */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.box {
+  color: var(--heighthColor);
+  font-family: var(--font-2);
+  background: var(--thirdColor);
+  text-align: center;
+  float: left;
+  max-height: 18rem;
+  width: 25%;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  overflow: hidden;
+}
+
+.box p {
+  text-align: center;
+  margin: 5rem;
+}
+
+.icon {
+  color: var(--fourthColor);
+  font-size: 2.5rem;
+  display: block;
+  padding: 10px;
+  padding-bottom: 10px;
+}
+
+.box:hover {
+  background: var(--sixthColor);
+  border-bottom: 4px solid var(--fourthColor);
+  transition: all 0.1s linear;
+}
+
+.box:hover .icon {
+  transform: translate(0px, -3.5px);
+  transition: all 0.25s linear;
+}
+
+.box h4 {
+  color: var(--seventhColor);
+  margin-bottom: var(--marginBottom);
+  letter-spacing: var(--spacing);
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  max-height: 1.75rem;
+}
+
+/* end boxes */
+
+/* products */
+
+.products {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.productsHeader {
+  font-family: var(--font-2);
+  margin: 2rem;
+  margin-left: var(--marginLeft);
+}
+
+.productsHeader h3 {
+  font-family: var(--font-1);
+  color: #ca2e55;
+  text-transform: capitalize;
+  margin-bottom: var(--marginBottom);
+  font-size: 2rem;
+}
+
+.productsHeader h2 {
+  color: var(--seventhColor);
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  margin-bottom: var(--marginBottom);
+  font-size: 1.75rem;
+}
+
+.productsHeader p {
+  text-indent: 3rem;
+  color: var(--heighthColor);
+  padding-bottom: 1rem;
+  margin-bottom: var(--marginBottom);
+}
+
+.productsHeader a {
+  text-transform: uppercase;
+  color: var(--thirdColor);
+  letter-spacing: var(--spacing);
+  font-family: var(--font-2);
+  text-decoration: none;
+  background-color: var(--fourthColor);
+  padding: 13px 40px 13px 40px;
+}
+
+.btn-products:hover {
+  color: var(--fourthColor);
+  background-color: var(--fifthColor);
+  transition: all 0.1s linear;
+}
+
+.productsImages {
+  padding: 3rem;
+  font-family: var(--font-2);
+  letter-spacing: var(--spacing);
+  float: left;
+  text-transform: capitalize;
+  width: 100vh;
+  max-width: 320px;
+  text-align: center;
+  margin-left: var(--marginLeft);
+}
+
+.productsImages img {
+  margin-bottom: var(--margin);
+  box-shadow: 1px 3px 3px rgb(199, 199, 199);
+  border-radius: 5%;
+  height: 20rem;
+  width: 15rem;
+}
+
+.productsImages:hover {
+  scale: 1.01;
+}
+
+.productsImages h3 {
+  color: var(--seventhColor);
+  margin-bottom: var(--marginBottom);
+}
+
+.productsImages p {
+  color: var(--fourthColor);
+  font-family: var(--font-1);
+  font-size: 1.25rem;
+}
+
+/* end products */
+
+/* services */
+
+.servicesHeader {
+  font-family: var(--font-2);
+  margin-left: var(--marginLeft);
+  text-transform: capitalize;
+}
+
+.servicesHeader h3 {
+  font-family: var(--font-1);
+  color: var(--fourthColor);
+  font-size: 2rem;
+}
+
+.servicesHeader h2 {
+  font-size: 2.5rem;
+  letter-spacing: var(--spacing);
+  margin-bottom: var(--margin);
+}
+
+.servicesCards {
+  margin: 1rem;
+  min-width: 320px;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.cards {
+  background: var(--sixthColor);
+  height: 27rem;
+  border-radius: 5%;
+  text-align: center;
+  box-shadow: 4px 5px 8px rgb(199, 199, 199);
+  float: left;
+  width: 30%;
+  margin-left: 3.33%;
+  margin-bottom: 3rem;
+}
+
+.cards:hover {
+  scale: 1.01;
+}
+
+.imgcontainer {
+  position: relative;
+}
+
+.cardsImages {
+  min-height: 17rem;
+  object-fit: cover;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  max-height: 20rem;
+}
+
+.cards img {
+  width: 100%;
+  display: block;
+}
+
+.cardsIcon {
+  color: var(--fourthColor);
+  font-size: 1.5rem;
+  background-color: var(--fifthColor);
+  border: 3px solid var(--thirdColor);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-radius: 50%;
+  padding: 0.5rem;
+  transform: translate(-50%, 50%);
+}
+
+.infoCards {
+  padding-top: 1.5rem;
+  font-family: var(--font-2);
+  position: relative;
+  text-transform: capitalize;
+}
+
+.infoCards h4 {
+  color: var(--seventhColor);
+  margin-bottom: 0.5rem;
+}
+
+.infoCards p {
+  text-transform: none;
+  margin: 0.5rem;
+  color: var(--heighthColor);
+}
+
+.infoCards a {
+  color: var(--thirdColor);
+  letter-spacing: var(--spacing);
+  font-family: var(--font-2);
+  text-decoration: none;
+  background-color: var(--fourthColor);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.btninfo:hover {
+  color: var(--fourthColor);
+  background-color: var(--fifthColor);
+  transition: all 0.1s linear;
+}
+
+/* end services */
+
+/* about and contact us */
+
+.about-us {
+  margin-left: var(--marginLeft);
+  font-family: var(--font-2);
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-bottom: var(--marginBottom);
+  color: var(--primaryColor);
+}
+
+.about-us h4 {
+  font-family: var(--font-1);
+  color: var(--fourthColor);
+}
+
+.contact {
+  position: relative;
+}
+
+.contact-us {
+  font-size: 2rem;
+  color: var(--fourthColor);
+  font-family: var(--font-1);
+  text-transform: capitalize;
+  text-align: center;
+  margin-left: var(--marginLeft);
+  background: var(--sixthColor);
+  border-radius: 10px;
+  max-width: 30rem;
+  padding: 1rem;
+  box-shadow: 4px 5px 8px rgb(199, 199, 199);
+  margin-bottom: var(--marginBottom);
+}
+
+.contact-us h3 {
+  text-transform: capitalize;
+  margin: 0.5rem;
+  font-family: var(--font-2);
+  color: var(--primaryColor);
+}
+
+.contactForm {
+  background: var(--fifthColor);
+  color: var(--seventhColor);
+  font-family: var(--font-2);
+  border: none;
+  border-radius: 9px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.contactArea {
+  font-size: 3rem;
+  margin-bottom: var(--marginBottom);
+}
+
+.btn-contact {
+  text-transform: capitalize;
+  color: var(--thirdColor);
+  letter-spacing: var(--spacing);
+  font-family: var(--font-2);
+  text-decoration: none;
+  background-color: var(--fourthColor);
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.btn-contact:hover {
+  color: var(--fourthColor);
+  background-color: var(--fifthColor);
+  transition: all 0.1s linear;
+}
+
+/* end about and contact us */
+
+/* footer */
+
+.bordure {
+  background: linear-gradient(
+    var(--fourthColor),
+    var(--sixthColor) 1%,
+    var(--fifthColor)
+  );
+  height: 1rem;
+}
+
+footer {
+  background: var(--primaryColor);
+  height: 8rem;
+  text-align: center;
+  font-family: var(--font-2);
+  color: var(--thirdColor);
+}
+
+.footIcon {
+  color: var(--thirdColor);
+  font-size: 3rem;
+  margin: 0.5rem;
+}
+
+.nameTypo {
+  font-family: var(--font-1);
+  color: var(--fourthColor);
+  text-transform: uppercase;
+}
+
+.goTop {
+  display: none;
+  color: var(--fourthColor);
+  font-size: 8rem;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background: none;
+  border: none;
+  text-shadow: 3px 3px 10px grey;
+}
+
+.goTop:hover {
+  color: var(--fifthColor);
+  scale: 1.2;
+  animation-name: move;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  50% {
+    transform: translate(0px, -20px);
+  }
+}
+
+/* end footer */
