@@ -455,17 +455,13 @@
 /* footer */
 
 .bordure {
-  background: linear-gradient(
-    var(--thirdColor),
-    var(--fifthColor),
-    var(--primaryColor)
-  );
+  background: linear-gradient(var(--fourthColor), var(--primaryColor) 110%);
   height: 1rem;
 }
 
 footer {
   background: var(--primaryColor);
-  height: 8rem;
+  height: 7rem;
   text-align: center;
   font-family: var(--font-2);
   color: var(--thirdColor);
@@ -475,6 +471,7 @@ footer {
   color: var(--thirdColor);
   font-size: 3rem;
   margin: 0.5rem;
+  margin-top: 2rem;
 }
 
 .nameTypo {
