@@ -456,9 +456,9 @@
 
 .bordure {
   background: linear-gradient(
-    var(--fourthColor),
-    var(--sixthColor) 1%,
-    var(--fifthColor)
+    var(--thirdColor),
+    var(--fifthColor),
+    var(--primaryColor)
   );
   height: 1rem;
 }
